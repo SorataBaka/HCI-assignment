@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Convergence&display=swap");
+.mainheader {
+	background-color: aqua;
+	height: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+.headerbuttondiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 60%;
+}
+.headerbuttondiv button {
+	font-family: "Convergence";
+	font-size: 20px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	width: 20%;
+}
+.headerbuttondiv button:hover {
+	/* enlarge */
+	transform: scale(1.1);
+	transition: transform 0.5s;
+	cursor: pointer;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
