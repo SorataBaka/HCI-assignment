@@ -1,12 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Convergence&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Convergence&family=Pacifico&display=swap");
 .mainheader {
-	background-color: aqua;
-	height: 30px;
+	height: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px;
+}
+.mainheader h1 {
+	font-family: "Allura", cursive;
+}
+.mainheader h5 {
+	text-align: end;
 }
 .headerbuttondiv {
 	display: flex;
@@ -32,8 +37,82 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+	background-color: #c1a790;
+	min-height: 100vh;
 }
 * {
 	margin: 0;
 	padding: 0;
+}
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: auto;
+	width: 100%;
+	justify-content: flex-end;
+	align-items: center;
+	position: absolute;
+	padding: 10px;
+}
+.socialButtonDiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 30%;
+}
+.socialDiv {
+	width: 30px;
+	height: 30px;
+	background-color: #947f6d;
+	padding: 10px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: row;
+}
+.maincontent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 100px;
+	height: max-content;
+	width: 100%;
+}
+
+.imagebox {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	padding: 10px;
+	background-color: #c4c4c4;
+	width: 30%;
+	align-self: flex-start;
+}
+.imagebox img {
+	width: 100%;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: #bf88a0 #bf9b9b;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	background: #c1a790;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: #d0c1b4;
+	border-radius: 10px;
+	border: none #ffffff;
 }
