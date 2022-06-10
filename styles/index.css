@@ -1,0 +1,66 @@
+.imagebox {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	padding: 10px;
+	background-color: #c4c4c4;
+	width: 30%;
+	align-self: flex-start;
+}
+.imagebox {
+	z-index: 2000;
+}
+.imagebox img {
+	width: 100%;
+}
+.textclass {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+}
+
+.maintext {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	flex-direction: column;
+}
+.maintext h2 {
+	font-family: Delius, cursive;
+	background-color: #d5c5ac;
+	width: min-content;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+.maintext h1 {
+	font-family: Sacramento, cursive;
+	text-align: end;
+	background-color: #c4c4c4;
+	width: min-content;
+	align-self: flex-end;
+	padding: 5px 20px;
+}
+.textclass p {
+	font-family: DM Serif Display, serif;
+	font-size: 30px;
+	text-align: left;
+	margin-top: 20px;
+}
+.backgroundImage {
+	position: absolute;
+	z-index: 2;
+	left: -50px;
+	top: 5px;
+	width: 40%;
+}
+.socialDiv:hover {
+	cursor: pointer;
+	/* enlarge */
+	transform: scale(1.1);
+	transition: transform 0.5s;
+}

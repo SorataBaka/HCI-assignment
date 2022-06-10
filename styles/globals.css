@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Allura&family=Convergence&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Convergence&family=DM+Serif+Display&family=Delius&family=Pacifico&family=Sacramento&display=swap");
 .mainheader {
 	height: auto;
 	display: flex;
@@ -6,6 +6,10 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px;
+	z-index: 5000;
+}
+.logodiv {
+	z-index: 6000;
 }
 .mainheader h1 {
 	font-family: "Allura", cursive;
@@ -72,27 +76,13 @@ footer {
 }
 .maincontent {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 50px 100px;
-	height: max-content;
-	width: 100%;
-}
-
-.imagebox {
-	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	height: auto;
-	padding: 10px;
-	background-color: #c4c4c4;
-	width: 30%;
-	align-self: flex-start;
-}
-.imagebox img {
-	width: 100%;
+	height: max-content;
+	width: auto;
+	padding: 20px 100px;
+	justify-content: space-evenly;
 }
 
 /* ===== Scrollbar CSS ===== */
