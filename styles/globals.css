@@ -7,6 +7,8 @@
 	align-items: center;
 	padding: 20px;
 	z-index: 5000;
+	position: absolute;
+	width: 95%;
 }
 .logodiv {
 	z-index: 6000;

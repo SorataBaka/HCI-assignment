@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MTGraphy</title>
+		<script src="./scripts/globals.js"></script>
+		<script src="./scripts/index.js"></script>
+		<link rel="stylesheet" href="./styles/globals.css" />
+		<link rel="stylesheet" href="./styles/index.css" />
+	</head>
+	<body>
+		<header class="mainheader">
+			<div class="logodiv" onclick="handlepageredirect('home')">
+				<h1>MTGraphy</h1>
+				<h5>Photography</h5>
+			</div>
+			<div class="headerbuttondiv">
+				<button onclick="handlepageredirect('home')">Home</button>
+				<button onclick="handlepageredirect('gallery')">Gallery</button>
+				<button onclick="handlepageredirect('about')">About Us</button>
+				<button onclick="handlepageredirect('contact')">Contact Us</button>
+				<button onclick="handlepageredirect('subscribe')">Subscribe</button>
+			</div>
+			<div class="sidebartoggle" onclick="togglesidebar()">
+				<img src="./assets/Buttons/list-outline.svg" alt="Sidebar Button" />
+			</div>
+		</header>
+		<div class="sidebar" id="sidebar">
+			<div class="closediv" onclick="togglesidebar()">
+				<img src="./assets/Buttons/close-outline.svg" alt="Close Button" />
+			</div>
+			<div class="sidebarbuttondiv">
+				<button onclick="handlepageredirect('home')">Home</button>
+				<button onclick="handlepageredirect('gallery')">Gallery</button>
+				<button onclick="handlepageredirect('about')">About Us</button>
+				<button onclick="handlepageredirect('contact')">Contact Us</button>
+				<button onclick="handlepageredirect('subscribe')">Subscribe</button>
+			</div>
+		</div>
+		<div class="maincontent">
+			<h1>Gallery</h1>
+			<div id="images"></div>
+		</div>
+		<footer>
+			<div class="socialButtonDiv">
+				<div class="socialDiv" onclick="handlesocialredirect('instagram')">
+					<img src="./assets/Socials/logo-instagram.svg" alt="Instagram Logo" />
+				</div>
+				<div class="socialDiv" onclick="handlesocialredirect('whatsapp')">
+					<img src="./assets/Socials/logo-whatsapp.svg" alt="Whatsapp Logo" />
+				</div>
+				<div class="socialDiv" onclick="handlesocialredirect('facebook')">
+					<img src="./assets/Socials/logo-facebook.svg" alt="Facebook logo" />
+				</div>
+				<div class="socialDiv" onclick="handlesocialredirect('youtube')">
+					<img src="./assets/Socials/logo-youtube.svg" alt="Youtube Logo" />
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

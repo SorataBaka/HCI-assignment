@@ -1,0 +1,54 @@
+.maincontent {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: max-content;
+	width: 100vw;
+	min-height: 100vh;
+	justify-content: space-evenly;
+}
+.leftside {
+	width: 60%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	font-family: Convergence;
+}
+.rightside {
+	width: 40%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	font-family: Convergence;
+	background-image: url("../assets/Subscribe.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+footer {
+	position: absolute;
+	bottom: 0;
+}
+.leftsidecontent {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.subscribeform {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: auto;
+	margin: 20px;
+}
