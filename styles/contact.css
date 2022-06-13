@@ -52,3 +52,11 @@ footer {
 	margin-right: 10px;
 	background-color: rgb(216, 255, 177);
 }
+@media only screen and (max-width: 750px) {
+	.rightside {
+		display: none;
+	}
+	.leftside {
+		width: 100%;
+	}
+}

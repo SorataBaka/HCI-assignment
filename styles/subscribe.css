@@ -42,13 +42,70 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 100px;
 }
 .subscribeform {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	width: 90%;
 	height: auto;
 	margin: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+	margin: 20px 0px;
+	width: 100%;
+	height: 30px;
+	/* add border on the bottom only */
+	border-bottom: 2px solid #000000;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	/* change placeholder color */
+	color: #000000;
+	/* change font size */
+	font-size: 15px;
+}
+.submit {
+	padding: 10px 15px;
+	background-color: #000000;
+	color: #ffffff;
+	border: none;
+	font-family: Convergence;
+	font-size: 20px;
+	margin: 10px 0px;
+}
+.submit:hover {
+	/* enlarge */
+	transform: scale(1.1);
+	transition: transform 0.5s;
+	cursor: pointer;
+}
+
+input:focus {
+	outline: none;
+}
+
+form span {
+	color: red;
+	font-size: 10px;
+	font-family: Convergence;
+	text-align: left;
+	width: 100%;
+	margin: 0px;
+	display: none;
+}
+
+@media only screen and (max-width: 750px) {
+	.rightside {
+		display: none;
+	}
+	.leftside {
+		width: 100%;
+	}
 }

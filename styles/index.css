@@ -67,3 +67,39 @@
 .maincontent {
 	padding-top: 100px;
 }
+@media only screen and (max-width: 750px) {
+	.maincontent {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.maintext {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		flex-direction: column;
+	}
+	.maintext h2 {
+		font-family: Delius, cursive;
+		background-color: #d5c5ac;
+		width: min-content;
+		padding: 10px 20px;
+		margin-bottom: 20px;
+		font-size: 30px;
+	}
+	.maintext h1 {
+		font-family: Sacramento, cursive;
+		text-align: center;
+		background-color: #c4c4c4;
+		width: min-content;
+		align-self: center;
+		padding: 5px 20px;
+	}
+	.textclass p {
+		font-family: DM Serif Display, serif;
+		font-size: 15px;
+		text-align: left;
+		margin-top: 20px;
+	}
+}
