@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MTGraphy</title>
+		<script src="./scripts/globals.js"></script>
+		<link rel="stylesheet" href="./styles/globals.css" />
+		<link rel="stylesheet" href="./styles/about.css" />
+	</head>
+	<body>
+		<header class="mainheader">
+			<div class="logodiv" onclick="handlepageredirect('home')">
+				<h1>MTGraphy</h1>
+				<h5>Photography</h5>
+			</div>
+			<div class="headerbuttondiv">
+				<button onclick="handlepageredirect('home')">Home</button>
+				<button onclick="handlepageredirect('gallery')">Gallery</button>
+				<button onclick="handlepageredirect('about')">About Us</button>
+				<button onclick="handlepageredirect('contact')">Contact Us</button>
+				<button onclick="handlepageredirect('subscribe')">Subscribe</button>
+			</div>
+			<div class="sidebartoggle" onclick="togglesidebar()">
+				<img src="./assets/Buttons/list-outline.svg" alt="Sidebar Button" />
+			</div>
+		</header>
+		<div class="sidebar" id="sidebar">
+			<div class="closediv" onclick="togglesidebar()">
+				<img src="./assets/Buttons/close-outline.svg" alt="Close Button" />
+			</div>
+			<div class="sidebarbuttondiv">
+				<button onclick="handlepageredirect('home')">Home</button>
+				<button onclick="handlepageredirect('gallery')">Gallery</button>
+				<button onclick="handlepageredirect('about')">About Us</button>
+				<button onclick="handlepageredirect('contact')">Contact Us</button>
+				<button onclick="handlepageredirect('subscribe')">Subscribe</button>
+			</div>
+		</div>
+		<div class="maincontent">
+			<img
+				src="./assets/About us 1.png"
+				alt="Background Image"
+				class="content1backgroundimage"
+			/>
+			<div class="contentdiv">
+				<img src="./assets/About us 2.png" alt="Sample Image 1" />
+				<div class="content1text">
+					<h1>Welcome,</h1>
+					<h4>Hello creative people!</h4>
+				</div>
+			</div>
+			<div class="contentdiv">
+				<div class="content2text">
+					<h1>About Us</h1>
+					<p>
+						MTgraphy is a place to explore the best view in Indonesia. MTgraphy
+						also introduces several cultures in Indonesia.MTgraphy is an
+						international photography service selling company that has been
+						providing services since. Its branches are spread all over the
+						world. MTgraphy provides services such as booking, and a
+						professional photographer with over 5 years of experience.
+					</p>
+				</div>
+				<img src="./assets/About us 3.png" alt="Sample Image 2" />
+			</div>
+			<div class="contentbanner">
+				<h1>
+					<span>"</span> Photography takes an instant out of time, altering life
+					by holding it still. <span>"</span>
+				</h1>
+			</div>
+			<div class="contentdiv2">
+				<h1>Team</h1>
+				<div class="teamdiv">
+					<div class="persondiv">
+						<img src="./assets/Lucie.png" alt="Lucie" />
+						<h2>Lucie Zavala</h2>
+					</div>
+					<div class="persondiv">
+						<img src="./assets/Cairon.png" alt="Cairon" />
+						<h2>Cairon Quinn</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="socialButtonDiv">
+				<div class="socialDiv" onclick="handlesocialredirect('instagram')">
+					<img src="./assets/Socials/logo-instagram.svg" alt="Instagram Logo" />
+				</div>
+				<div class="socialDiv" onclick="handlesocialredirect('whatsapp')">
+					<img src="./assets/Socials/logo-whatsapp.svg" alt="Whatsapp Logo" />
+				</div>
+				<div class="socialDiv" onclick="handlesocialredirect('facebook')">
+					<img src="./assets/Socials/logo-facebook.svg" alt="Facebook logo" />
+				</div>
+				<div class="socialDiv" onclick="handlesocialredirect('youtube')">
+					<img src="./assets/Socials/logo-youtube.svg" alt="Youtube Logo" />
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
